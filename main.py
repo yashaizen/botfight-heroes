@@ -34,11 +34,4 @@ class Bot:                                                     # Class Bot
             target.health = target.health + (self.health*25/100) # In this case of a failed attack the increase in target's health is equal to 25% of attacker's healths
 
 
-if __name__ == '__main__':
-    print ('choose 2 bots from `simplebot` , `masterbot`, `primebot`, `legendbot`, `godbot`, `omnibot`')
-    p, q = input('Enter bots a and b such that a will attack b (ex: primebot legendbot): ').split()
-    a = Bot(p)
-    b = Bot(q)
-
-    print (main(a,b))
 
