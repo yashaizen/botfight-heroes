@@ -1,4 +1,5 @@
-import bot_db
+from bot_db import *
+from quirk_db import *
 class Bot:                                                     # Class Bot
     def __init__(self,bot_name):                               # initializing a bot through its name, mapped from the bot_db
         h = bot_db[bot_name]
@@ -34,4 +35,8 @@ class Bot:                                                     # Class Bot
             target.health = target.health + (self.health*25/100) # In this case of a failed attack the increase in target's health is equal to 25% of attacker's healths
 
 
-
+# class Quirk(Bot):
+#     def __init__(self, quirk):
+#         self.skill = quirk_db[quirk]
+#
+# a = Quirk('bomb')

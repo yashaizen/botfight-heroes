@@ -1,4 +1,4 @@
-import main
+from main import *
 def main(a,b):  # Attack function where bot 'a' will attack bot 'b'
     n = int(input("Enter number of times to attack : "))
     for i in range(n):
