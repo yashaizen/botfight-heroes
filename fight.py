@@ -1,7 +1,7 @@
 from main import *
 def main(a,b):  # Attack function where bot 'a' will attack bot 'b'
     n = int(input("Enter number of times to attack : "))
-    for i in range(n):
+    for _ in range(n):
         a.attack_bot(b)
         print ('bot a has health ' + str(a.health) + ' and bot b has health ' + str(b.health) + ' and energy ' + str(b.energy) + ' has attack ' + str(b.attack))
     print ('Enter F to fight again or press enter to quit')
